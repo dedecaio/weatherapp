@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+body {
+    min-height: 100%;
+    background-color: #1b70bf;
+
+}
+
+input:focus {
+    outline: 0;
+}
+
+input::placeholder {
+    color: #eee;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hide {
+    display: none !important;
+}
+
+header {
+    padding: 60px 0 0 0;
+    background: linear-gradient(180deg, #42bbfc 0%, #1b70bf 100%);
+    text-align: center;
+}
+
+header h2 {
+    color: #fff;
+    font-weight: 400;
+
+}
+
+
+header input {
+    width: 100%;
+    margin-top: 50px;
+    color: #eee;
+    border: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    background-color: transparent;
+}
+
+header button {
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 20px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+header button i {
+    margin-left: 5px;
+}
+
+
+header #error-message {
+    margin-top: 20px;
+    padding: 10px 0;
+    color: #eee;
+    background-color: #f57f7f;
+    border: 1px solid #e04848;
+}
+
+.weather-information {
+    padding: 50px 0;
+}
+
+.weather-information .container {
+    max-width: 800px;
+    color: #fff;
+}
+
+.card {
+    padding: 40px;
+    background-color: rgba(66, 187, 252, 0.4);
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.one {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 1px solid #fff;
+}
+
+.one h2 {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one h2 span {
+    margin: 0 16px;
+}
+
+
+
+.wraper {
+    margin-top: 30px;
+    text-align: center;
+    width: 50%;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.wraper span {
+    padding: 0 5px;
+}
+
+.two {
+    width: 50%;
+    text-align: center;
+    border-left: 1px solid #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.two h1 {
+    font-size: 80px;
+}
+
+
+.two img {
+    max-width: 100%;
+}
+
+.two p {
+    text-transform: capitalize;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+footer h2 {
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .one h2 {
+        flex-direction: column;
+    }
+
+    .one h2 span {
+        margin: 8px 0;
+    }
+
+    .one {
+        flex-direction: column;
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #eee;
+        padding: 20px 0;
+    }
+
+    .two {
+        width: 100%;
+        border-left: 0;
+        border-top: 1px solid #eee;
+        padding: 20px 0;
+    }
+
+    .wraper {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 10px;
+        position: static;
+    }
+}
